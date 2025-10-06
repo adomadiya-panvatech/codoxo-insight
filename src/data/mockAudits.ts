@@ -3,8 +3,8 @@ import { Audit } from "@/types/audit";
 export const mockAudits: Audit[] = [
   {
     id: "1",
-    name: "HIPAA Compliance Review Q1 2024",
-    category: "compliance",
+    name: "Claims Adjudication Accuracy Review Q1 2024",
+    category: "claims-processing",
     status: "completed",
     progress: 100,
     startDate: "2024-01-15",
@@ -15,8 +15,8 @@ export const mockAudits: Audit[] = [
   },
   {
     id: "2",
-    name: "Cybersecurity Infrastructure Assessment",
-    category: "security",
+    name: "Payment Integrity & Fraud Detection Assessment",
+    category: "payment-integrity",
     status: "in-progress",
     progress: 65,
     startDate: "2024-03-01",
@@ -27,8 +27,8 @@ export const mockAudits: Audit[] = [
   },
   {
     id: "3",
-    name: "Financial Controls Audit 2024",
-    category: "financial",
+    name: "Provider Contract Compliance Audit 2024",
+    category: "provider-network",
     status: "in-progress",
     progress: 42,
     startDate: "2024-02-20",
@@ -39,8 +39,8 @@ export const mockAudits: Audit[] = [
   },
   {
     id: "4",
-    name: "Operational Efficiency Review",
-    category: "operational",
+    name: "Prior Authorization Process Review",
+    category: "utilization-management",
     status: "pending",
     progress: 0,
     startDate: "2024-05-01",
@@ -51,7 +51,7 @@ export const mockAudits: Audit[] = [
   },
   {
     id: "5",
-    name: "Data Privacy Impact Assessment",
+    name: "HIPAA & Regulatory Compliance Assessment",
     category: "compliance",
     status: "review",
     progress: 95,
@@ -63,8 +63,8 @@ export const mockAudits: Audit[] = [
   },
   {
     id: "6",
-    name: "Cloud Infrastructure Security Audit",
-    category: "technical",
+    name: "Claims Denial & Appeal Management Audit",
+    category: "claims-processing",
     status: "in-progress",
     progress: 78,
     startDate: "2024-03-15",
@@ -75,8 +75,8 @@ export const mockAudits: Audit[] = [
   },
   {
     id: "7",
-    name: "SOC 2 Type II Certification",
-    category: "compliance",
+    name: "Provider Network Credentialing Review",
+    category: "provider-network",
     status: "pending",
     progress: 0,
     startDate: "2024-06-01",
@@ -87,8 +87,8 @@ export const mockAudits: Audit[] = [
   },
   {
     id: "8",
-    name: "Third-Party Vendor Security Review",
-    category: "security",
+    name: "Duplicate Payment Detection & Recovery",
+    category: "payment-integrity",
     status: "completed",
     progress: 100,
     startDate: "2024-01-05",

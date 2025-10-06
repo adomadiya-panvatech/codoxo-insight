@@ -36,9 +36,9 @@ const Index = () => {
       {/* Hero Section */}
       <header className="bg-gradient-primary text-primary-foreground py-16 px-4">
         <div className="container mx-auto max-w-7xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Codoxo Audit Scope Overview</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">RCM Payer Audit Scope Overview</h1>
           <p className="text-lg md:text-xl opacity-90 max-w-2xl">
-            Comprehensive audit management and tracking system for compliance, security, and operational excellence.
+            Comprehensive Revenue Cycle Management audit tracking for payer operations including claims processing, payment integrity, provider network management, and compliance monitoring.
           </p>
         </div>
       </header>
@@ -104,11 +104,11 @@ const Index = () => {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">All Categories</SelectItem>
+                <SelectItem value="claims-processing">Claims Processing</SelectItem>
+                <SelectItem value="payment-integrity">Payment Integrity</SelectItem>
+                <SelectItem value="provider-network">Provider Network</SelectItem>
                 <SelectItem value="compliance">Compliance</SelectItem>
-                <SelectItem value="security">Security</SelectItem>
-                <SelectItem value="financial">Financial</SelectItem>
-                <SelectItem value="operational">Operational</SelectItem>
-                <SelectItem value="technical">Technical</SelectItem>
+                <SelectItem value="utilization-management">Utilization Management</SelectItem>
               </SelectContent>
             </Select>
           </div>

@@ -8,11 +8,11 @@ interface AuditDistributionChartProps {
 
 export const AuditDistributionChart = ({ audits }: AuditDistributionChartProps) => {
   const categoryColors: Record<AuditCategory, string> = {
-    compliance: "hsl(221 83% 53%)",
-    security: "hsl(262 83% 58%)",
-    financial: "hsl(142 76% 36%)",
-    operational: "hsl(38 92% 50%)",
-    technical: "hsl(0 84% 60%)",
+    "claims-processing": "hsl(221 83% 53%)",
+    "payment-integrity": "hsl(142 76% 36%)",
+    "provider-network": "hsl(262 83% 58%)",
+    "compliance": "hsl(0 84% 60%)",
+    "utilization-management": "hsl(38 92% 50%)",
   };
 
   const data = Object.entries(
@@ -21,7 +21,7 @@ export const AuditDistributionChart = ({ audits }: AuditDistributionChartProps) 
       return acc;
     }, {} as Record<AuditCategory, number>)
   ).map(([category, count]) => ({
-    name: category.charAt(0).toUpperCase() + category.slice(1),
+    name: category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
     value: count,
     color: categoryColors[category as AuditCategory],
   }));

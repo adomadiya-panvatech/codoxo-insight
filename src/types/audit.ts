@@ -1,5 +1,5 @@
 export type AuditStatus = "completed" | "in-progress" | "pending" | "review";
-export type AuditCategory = "compliance" | "security" | "financial" | "operational" | "technical";
+export type AuditCategory = "claims-processing" | "payment-integrity" | "provider-network" | "compliance" | "utilization-management";
 
 export interface Audit {
   id: string;
